@@ -5,10 +5,6 @@ export class Charmander implements PokemonPrototype {
   public type: string;
   public attacks: string[] = [];
 
-  learAttack(attackName: string): void {
-    this.attacks.push(attackName)
-  }
-
   clone(): PokemonPrototype {
     const charmander = new Charmander()
     charmander.level = this.level

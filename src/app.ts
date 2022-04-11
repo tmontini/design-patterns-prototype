@@ -1,11 +1,12 @@
 import { PokemonPrototype } from "./interfaces/PokemonPrototype";
-import { Pokemon } from "./models/pokemon";
+import { Pokemon } from "./factory/pokemon";
 
 const pokemon = new Pokemon()
 
-const chikorita = pokemon.createPokemon('chikorita')
+const chikorita: PokemonPrototype = pokemon.createPokemon('chikorita')
 
 console.log(chikorita)
 
-const chikoritaClone = chikorita.clone()
+const chikoritaClone: PokemonPrototype = chikorita.clone()
 chikoritaClone.attacks.push('razor leaf')
+console.log(chikoritaClone)

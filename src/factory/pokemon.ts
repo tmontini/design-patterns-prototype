@@ -1,7 +1,7 @@
 import HashTable from "../interfaces/HashTable";
 import { PokemonPrototype } from "../interfaces/PokemonPrototype";
-import { Charmander } from "./charmander";
-import { Chikorita } from "./chikorita";
+import { Charmander } from "../models/charmander";
+import { Chikorita } from "../models/chikorita";
 
 export class Pokemon {
   public pokemons: HashTable<PokemonPrototype> = {}
